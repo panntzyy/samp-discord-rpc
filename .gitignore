@@ -1,0 +1,19 @@
+# Compiled binaries (released via GitHub Releases)
+*.asi
+*.dll
+*.exe
+*.o
+*.obj
+*.zip
+
+# Build files
+build/
+bin/
+
+# Temp files & editor
+*.tmp
+*.old*
+*.bak
+*.log
+.vscode/
+.idea/

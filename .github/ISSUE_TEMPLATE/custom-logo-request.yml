@@ -1,0 +1,54 @@
+name: "Custom Server Logo Request"
+description: "Request your SA:MP server logo to be added to Discord Rich Presence"
+title: "[Logo Request]: <Server Name>"
+labels: ["logo-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Terima kasih sudah mengajukan request logo custom server SA:MP!
+        Pastikan server kamu aktif dan logo memenuhi spesifikasi.
+
+  - type: input
+    id: server_name
+    attributes:
+      label: Server Name
+      description: Nama lengkap server SA:MP kamu
+      placeholder: "e.g. Jogjagamers Reality Project"
+    validations:
+      required: true
+
+  - type: input
+    id: server_ip
+    attributes:
+      label: Server IP & Port
+      description: Alamat IP lengkap beserta port server
+      placeholder: "e.g. 178.128.106.136:7777 atau jg-gta.com:7777"
+    validations:
+      required: true
+
+  - type: input
+    id: server_website
+    attributes:
+      label: Website / Discord Invite Link
+      description: Tautan website resmi atau invite Discord server
+      placeholder: "https://discord.gg/yourserver"
+    validations:
+      required: false
+
+  - type: textarea
+    id: logo_upload
+    attributes:
+      label: Server Logo (Upload / Link)
+      description: Upload gambar logo berukuran minimal 512x512 px (format .PNG transparan atau .JPG). Drag & drop gambar ke sini.
+      placeholder: "Drag and drop logo image file here..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Konfirmasi
+      options:
+        - label: "Saya mengonfirmasi bahwa saya adalah pengelola/pemain sah server ini dan logo yang dilampirkan berukuran minimal 512x512."
+          required: true

@@ -1,0 +1,3 @@
+# Format: <ip:port>=<discord_asset_key>[,<website_url>]
+# Website opsional; jika diisi, tombol "Website" di Discord RPC otomatis mengarah ke link ini.
+34.142.232.231:7781=outlaw,https://discord.gg/Jvwq83qW9R
